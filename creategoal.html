@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        label {
+            margin: 20px 0 0;
+        }
+        #general {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #button {
+            margin: 30px auto 0;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><img src="LOGO.jpg" alt=""></li>
+        <li><a href="index.html" id="signout">Sign Out</a></li>
+    </ul>
+    <div id="general">
+        <form action="main.html">
+            <div id="fID">
+                <div id="new_target">
+                    <a href="main.html">
+                        <button>
+                            <i>&#x2190</i>
+                        </button>
+                    </a>
+                </div>
+                <label>Name your goal:</label>
+                <input type="text" name="GoalTitle" id="GoalTitle">
+                <label>Why do you need to achieve it?:</label>
+                <input type="text" name="Motivation" id="Motivation">
+                <label>When must the goal be achieved?</label>
+                <input type="date" name="DueDate" id="DueDate">
+                <label>What is your target?</label>
+                <input type="text" name="target1" id="target1">
+                <select name="types" id="">
+                    <option value="boolean">Boolean</option>
+                    <option value="numerical">Numerical</option>
+                    <option value="monetary">Monetary</option>
+                </select>
+                <div id="new_target">
+                    <button>+</button><a href="">Add another target</a>
+                </div>
+                <div id="button">
+                    <input type="submit" value="Save goal">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
